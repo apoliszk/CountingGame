@@ -1,0 +1,18 @@
+.number-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number-table>.number-table-el {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background: gray;
+    border: 1px solid white;
+}
+
+.number-table-el.skip {
+    background: red;
+}
