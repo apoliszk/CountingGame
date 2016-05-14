@@ -1,4 +1,10 @@
 <div>
     <label>Input the number: </label>
-    <input (keydown)="onInputNumberChange($event)">
+    <input #numberInput value="{{number}}" (keyup)="onNumberChange(numberInput.value)">
+    <span *ngIf="inputError">You should input a positive number!</span>
+    <div class="number-table">
+        <div *ngFor="let el of tableElements" class="number-table-el" [class.skip]="el.skip">
+            {{el.number}}
+        </div>
+    </div>
 </div>
