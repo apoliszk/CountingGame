@@ -3,11 +3,11 @@ body {
     font-family: Cambria, Georgia;
 }
 input[text] {
-    border: 1px dotted #888;
-    padding: 5px 4px;
+    border: 0px;
+    border-bottom: 1px solid #EEE;
+    padding: 5px 4px 0px;
     width: 50px;
     text-align: center;
-    border-style: dashed;
     outline: none;
 }
 .control-bar {
@@ -19,7 +19,7 @@ input[text] {
     margin-right: 50px;
 }
 .control-bar-item-error-info {
-    color: red;
+    color: #FF3333;
 }
 .number-table {
     display: flex;
