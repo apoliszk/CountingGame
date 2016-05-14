@@ -2,6 +2,26 @@ body {
     color: #888;
     font-family: Cambria, Georgia;
 }
+.background {
+    cursor: pointer;
+    padding: 4px 0px;
+    margin: 0px;
+}
+.background:hover {
+    background: #EEE;
+}
+.background::after {
+    content: attr(icon);
+    color: #607D8B;
+    margin: 0 4px;
+    font-family: Consolas;
+    font-size: 50%;
+    vertical-align: middle;
+}
+.background-info {
+    padding: 0px 20px;
+    margin: 0px;
+}
 input[text] {
     border: 0px;
     border-bottom: 1px solid #EEE;
