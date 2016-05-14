@@ -21,6 +21,7 @@
                     this.inputError = true;
                 }
             },
+            
             generateTable: function() {
                 var arr = [];
                 for (var i = 1; i <= this.tableElementsCount; i++) {
