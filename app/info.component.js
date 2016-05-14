@@ -2,7 +2,7 @@
     app.InfoComponent =
         ng.core.Component({
             selector: 'my-info',
-            template: '<h1>InfoComponent</h1>'
+            template: '<h1>TODO: Game Infomation will be displayed here.</h1>'
         })
         .Class({
             constructor: function() {}

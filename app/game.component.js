@@ -14,14 +14,26 @@
 
             onNumberChange: function(value) {
                 if (/^\d+$/.test(value)) {
-                    this.inputError = false;
+                    this.inputNumberError = false;
                     this.number = value;
-                    this.generateTable();
                 } else {
-                    this.inputError = true;
+                    this.inputNumberError = true;
                 }
+                if (!this.inputTotalError && !this.inputNumberError)
+                    this.generateTable();
             },
-            
+
+            onTotalChange: function(value) {
+                if (/^\d+$/.test(value)) {
+                    this.inputTotalError = false;
+                    this.tableElementsCount = value;
+                } else {
+                    this.inputTotalError = true;
+                }
+                if (!this.inputTotalError && !this.inputNumberError)
+                    this.generateTable();
+            },
+
             generateTable: function() {
                 var arr = [];
                 for (var i = 1; i <= this.tableElementsCount; i++) {

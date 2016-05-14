@@ -1,8 +1,7 @@
 body {
-  color: #888;
-  font-family: Cambria, Georgia;
+    color: #888;
+    font-family: Cambria, Georgia;
 }
-
 input[text] {
     border: 1px dotted #888;
     padding: 5px 4px;
@@ -11,26 +10,21 @@ input[text] {
     border-style: dashed;
     outline: none;
 }
-
 .control-bar {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0px;
 }
-
 .control-bar-item {
     margin-right: 50px;
 }
-
 .control-bar-item-error-info {
     color: red;
 }
-
 .number-table {
     display: flex;
     flex-wrap: wrap;
 }
-
 .number-table>.number-table-el {
     width: 40px;
     height: 40px;
@@ -39,7 +33,6 @@ input[text] {
     background: #EEE;
     border: 1px solid white;
 }
-
 .number-table-el.skip {
     color: white;
     background: #607D8B;
