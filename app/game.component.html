@@ -1,5 +1,5 @@
 <div>
-    <label>Input the number: </label>
+    <label>Input Number: </label>
     <input #numberInput value="{{number}}" (keyup)="onNumberChange(numberInput.value)">
     <span *ngIf="inputError">You should input a positive number!</span>
     <div class="number-table">

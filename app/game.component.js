@@ -6,13 +6,16 @@
         })
         .Class({
             constructor: function() {
+                this.tableElements = [];
                 this.number = 7;
                 this.tableElementsCount = 200;
                 this.onNumberChange(this.number);
             },
+
             onNumberChange: function(value) {
                 if (/^\d+$/.test(value)) {
                     this.inputError = false;
+                    this.number = value;
                     this.generateTable();
                 } else {
                     this.inputError = true;
