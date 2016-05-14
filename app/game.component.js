@@ -2,9 +2,12 @@
     app.GameComponent =
         ng.core.Component({
             selector: 'my-game',
-            template: '<h1>GameComponent</h1>'
+            templateUrl: 'app/game.component.html'
         })
         .Class({
-            constructor: function() {}
+            constructor: function() {},
+            onInputNumberChange: function(event) {
+                debugger;
+            }
         });
 })(window.app || (window.app = {}));
