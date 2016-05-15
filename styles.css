@@ -1,4 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
+    margin: 20px;
+}
+body, input[text] {
     color: #888;
     font-family: Cambria, Georgia;
 }
@@ -26,19 +33,21 @@ body {
 }
 input[text] {
     border: 0px;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 2px solid #EEE;
     padding: 5px 4px 0px;
     width: 50px;
     text-align: center;
     outline: none;
+    font-size: 120%;
 }
 .control-bar {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
-.control-bar-item {
-    margin-right: 50px;
+.control-bar-item:first-child {
+    margin-right: 90px;
 }
 .control-bar-item-error-info {
     color: #FF3333;
