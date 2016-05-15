@@ -12,11 +12,7 @@
 
             toggleInfo: function() {
                 this.infoShown = !this.infoShown;
-                if (this.infoShown) {
-                    this.icon = '[-]';
-                } else {
-                    this.icon = '[+]';
-                }
+                return false;
             }
         });
 })(window.app || (window.app = {}));

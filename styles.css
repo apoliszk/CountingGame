@@ -2,21 +2,23 @@ body {
     color: #888;
     font-family: Cambria, Georgia;
 }
-.background {
-    cursor: pointer;
-    padding: 4px 0px;
-    margin: 0px;
-}
-.background:hover {
+.help {
+    color: inherit;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 0 6px;
     background: #EEE;
-}
-.background::after {
-    content: attr(icon);
-    color: #607D8B;
-    margin: 0 4px;
-    font-family: Consolas;
+    text-decoration: none;
     font-size: 50%;
-    vertical-align: middle;
+    vertical-align: super;
+}
+.help.on {
+    color: white;
+    background: #607D8B;
+}
+.help:hover {
+    color: white;
+    background: #CFD8DC;
 }
 .background-info {
     padding: 0px 20px;
