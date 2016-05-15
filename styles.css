@@ -4,6 +4,7 @@
 }
 body {
     margin: 10px;
+    min-width: 500px;
 }
 body, input[text] {
     color: #888;
@@ -26,19 +27,27 @@ my-info {
     color: white;
     background: #607D8B;
 }
-.help:hover {
-    color: white;
-    background: #CFD8DC;
-}
 .background-info {
     padding: 8px;
-    width: 400px;
-    background: white;
+    width: 350px;
+    background: #DDD;
     position: absolute;
-    border: 1px solid #888;
+    line-height: 1.5;
     box-shadow: 4px 4px 4px #888;
     top: 40px;
     left: 40px;
+    z-index: 10;
+}
+.background-info-pointer {
+    position: absolute;
+    top: -15px;
+    left: 210px;
+    border-left: 20px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 60px solid #DDD;
+    box-shadow: 4px 4px 4px #888;
+    transform: rotate(15deg);
 }
 input[text] {
     border: 0px;
