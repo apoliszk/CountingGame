@@ -7,6 +7,7 @@
         <label>Total:</label>
         <input text="" #totalInput value="{{tableElementsCount}}" (keyup)="onTotalChange(totalInput.value)">
     </div>
+    <input type="button" name="name" value="Apply" (click)="generateTable()">
     <div class="control-bar-item-error-info" *ngIf="inputNumberError||inputTotalError">You should input a positive number!</div>
 </div>
 <div class="number-table">

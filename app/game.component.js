@@ -10,6 +10,7 @@
                 this.number = 7;
                 this.tableElementsCount = 200;
                 this.onNumberChange(this.number);
+                this.generateTable();
             },
 
             onNumberChange: function(value) {
@@ -19,8 +20,6 @@
                 } else {
                     this.inputNumberError = true;
                 }
-                if (!this.inputTotalError && !this.inputNumberError)
-                    this.generateTable();
             },
 
             onTotalChange: function(value) {
@@ -30,11 +29,10 @@
                 } else {
                     this.inputTotalError = true;
                 }
-                if (!this.inputTotalError && !this.inputNumberError)
-                    this.generateTable();
             },
 
             generateTable: function() {
+                if (this.inputTotalError || this.inputNumberError) return;
                 var arr = [];
                 for (var i = 1; i <= this.tableElementsCount; i++) {
                     arr.push({
