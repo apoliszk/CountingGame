@@ -7,7 +7,6 @@
         .Class({
             constructor: function() {
                 this.infoShown = false;
-                this.toggleInfo();
             },
 
             toggleInfo: function() {
