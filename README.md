@@ -1,2 +1,3 @@
 # Counting Game Cheat Tool
-[Take a look](http://www.apolis.pub/pages/CountingGame/)
+
+[Take a look](http://apoliszk.github.io/pages/counting-game/)
